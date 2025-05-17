@@ -13,27 +13,35 @@ export default function About() {
         alignItems: 'center',
         padding: '2rem',
         textAlign: 'center',
+        backgroundColor: '#f9f9f9',
       }}
     >
-
+      
       <div>
-        <h1>About Page</h1>
+        <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>About Page</h1>
         <p>This page is all about our Next.js project.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
-        <p>Amet consectetur adipiscing elit quisque faucibus ex sapien.</p>
-        <p>Quisque faucibus ex sapien vitae pellentesque sem placerat.</p>
-        <p>Vitae pellentesque sem placerat in id cursus mi.</p>
+        <p>This page is all about our Next.js project.</p>
+        <p>This page is all about our Next.js project.</p>
+        <p>This page is all about our Next.js project.</p>
       </div>
 
-
-      <div style={{ marginBottom: '2rem' }}>
+      
+      <div style={{ marginBottom: '3rem' }}>
         <button
           onClick={() => router.push('/')}
           style={{
-            padding: '0.75rem 1.5rem',
+            padding: '0.75rem 2rem',
             fontSize: '1rem',
+            backgroundColor: '#0070f3',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '8px',
             cursor: 'pointer',
+            boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+            transition: 'background-color 0.3s ease',
           }}
+          onMouseOver={(e) => (e.target.style.backgroundColor = '#0059c1')}
+          onMouseOut={(e) => (e.target.style.backgroundColor = '#0070f3')}
         >
           Go to Home
         </button>
