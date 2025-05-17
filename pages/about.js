@@ -15,7 +15,7 @@ export default function About() {
         textAlign: 'center',
       }}
     >
-      {/* Top Section with Text */}
+
       <div>
         <h1>About Page</h1>
         <p>This page is all about our Next.js project.</p>
@@ -25,7 +25,7 @@ export default function About() {
         <p>Vitae pellentesque sem placerat in id cursus mi.</p>
       </div>
 
-      {/* Bottom Centered Button */}
+
       <div style={{ marginBottom: '2rem' }}>
         <button
           onClick={() => router.push('/')}
